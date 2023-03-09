@@ -38,8 +38,9 @@
 				<div class="col-12-m8" id="fileSelectionContainer">
 					<label class="input__label" for="file">Select File</label>
 					<div class="flex">
-						<input class="input input--left flex-1" type="text" id="fileName" disabled />							
-						<button id="fileMock" class="bttn right active">Browse</button>
+						<input class="input input--left flex-1" type="text" /> 
+						<input type="file" type="text" id="fileName" hidden/>
+						<input type="button" onclick="document.getElementById('fileName').click()" button id="fileMock" class="bttn right active">Browse</button>
 					</div>
 					<input style="display: none;" type="file" id="file" />
 				</div>
